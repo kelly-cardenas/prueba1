@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated tiendaCristal -->
+      <package
+            uri="http:///tiendacristal.ecore"
+            class="tiendacristal.TiendacristalPackage"
+            genModel="model/tiendaCristal.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated tiendaCristal -->
+      <package
+            uri="http:///tiendacristal/ui.ecore"
+            class="tiendacristal.ui.UiPackage"
+            genModel="model/tiendaCristal.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated tiendaCristal -->
+      <package
+            uri="http:///tiendacristal/ui/contenedorcrudproductos.ecore"
+            class="tiendacristal.ui.contenedorcrudproductos.ContenedorcrudproductosPackage"
+            genModel="model/tiendaCristal.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated tiendaCristal -->
+      <package
+            uri="http:///tiendacristal/ui/contenedorcrudclientes.ecore"
+            class="tiendacristal.ui.contenedorcrudclientes.ContenedorcrudclientesPackage"
+            genModel="model/tiendaCristal.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated tiendaCristal -->
+      <package
+            uri="http:///tiendacristal/ui/contenedorcrudrealizarcompra.ecore"
+            class="tiendacristal.ui.contenedorcrudrealizarcompra.ContenedorcrudrealizarcompraPackage"
+            genModel="model/tiendaCristal.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated tiendaCristal -->
+      <package
+            uri="http:///tiendacristal/ui/contenedorcrudpedido.ecore"
+            class="tiendacristal.ui.contenedorcrudpedido.ContenedorcrudpedidoPackage"
+            genModel="model/tiendaCristal.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated tiendaCristal -->
+      <package
+            uri="http:///tiendacristal/ui/contenedorpedidoviewpart.ecore"
+            class="tiendacristal.ui.contenedorpedidoviewpart.ContenedorpedidoviewpartPackage"
+            genModel="model/tiendaCristal.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated tiendaCristal -->
+      <package
+            uri="http:///tiendacristal/domain.ecore"
+            class="tiendacristal.domain.DomainPackage"
+            genModel="model/tiendaCristal.genmodel"/>
+   </extension>
+
+</plugin>

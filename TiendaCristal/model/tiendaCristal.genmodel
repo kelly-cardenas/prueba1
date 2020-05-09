@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/TiendaCristal/src" modelPluginID="TiendaCristal"
+    modelName="TiendaCristal" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.rose" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>C:\Users\Telly\Desktop\td\tiendaCristal\modelo\tiendaCristal.mdl</foreignModel>
+  <genPackages prefix="Tiendacristal" disposableProviderFactory="true" ecorePackage="tiendaCristal.ecore#/">
+    <genClasses ecoreClass="tiendaCristal.ecore#//ModelFactory">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ModelFactory/theUI"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ModelFactory/theDomain"/>
+      <genOperations ecoreOperation="tiendaCristal.ecore#//ModelFactory/implementarModelo"/>
+      <genOperations ecoreOperation="tiendaCristal.ecore#//ModelFactory/guardar"/>
+      <genOperations ecoreOperation="tiendaCristal.ecore#//ModelFactory/cargar"/>
+      <genOperations ecoreOperation="tiendaCristal.ecore#//ModelFactory/obtenerContenedorCRUDCliente"/>
+      <genOperations ecoreOperation="tiendaCristal.ecore#//ModelFactory/obtenerUI"/>
+    </genClasses>
+    <nestedGenPackages prefix="Ui" disposableProviderFactory="true" ecorePackage="tiendaCristal.ecore#//ui">
+      <genClasses ecoreClass="tiendaCristal.ecore#//ui/UI">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/UI/ownedByModelFactory"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/UI/theDomainAsociado"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/UI/theContenedorCRUDProductosViewModel"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/UI/theContenedorCRUDClienteViewModel"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/UI/theContenedorCRUDRealizarCompraViewModel"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/UI/theContenedorCRUDPedidoViewModel"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/UI/theContenedorPedidoViewPart"/>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/implementarModelo"/>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/crearProducto">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/crearProducto/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/crearCompra">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/crearCompra/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/crearPedido">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/crearPedido/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/buscarProductoId">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/buscarProductoId/id"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/agregarListaP">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/agregarListaP/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/buscarProductoNombre">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/buscarProductoNombre/nombre"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/crearCliente">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/crearCliente/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/actualizarCliente">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/actualizarCliente/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/eliminarCliente">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/eliminarCliente/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/buscarCliente">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/buscarCliente/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/buscarProducto">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/buscarProducto/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/eliminarProducto">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/eliminarProducto/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/actualizarProducto">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/actualizarProducto/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//ui/UI/updateContenedorListadoClientes">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//ui/UI/updateContenedorListadoClientes/formulario"/>
+        </genOperations>
+      </genClasses>
+      <nestedGenPackages prefix="Contenedorcrudproductos" disposableProviderFactory="true"
+          ecorePackage="tiendaCristal.ecore#//ui/contenedorcrudproductos">
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/UI"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/theContenedorDetalleProductosViewmodel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/theContenedorMestroProductosViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/crearProducto"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/crear"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/enlazar"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/buscarProductoId">
+            <genParameters ecoreParameter="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/buscarProductoId/nombre"/>
+          </genOperations>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/implementarModelo"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/agregarListaP"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/buscarProductoNombre">
+            <genParameters ecoreParameter="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/buscarProductoNombre/nombre"/>
+          </genOperations>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/buscarProducto"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/eliminarProducto"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorCRUDProductosViewModel/actualizarProducto"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorDetalleProductosViewmodel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorDetalleProductosViewmodel/codigo"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorDetalleProductosViewmodel/precio"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorDetalleProductosViewmodel/categoria"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorDetalleProductosViewmodel/nombre"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorDetalleProductosViewmodel/ContenedorCRUDProductosViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorDetalleProductosViewmodel/crear"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorDetalleProductosViewmodel/implementarModelo"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorMestroProductosViewModel">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorMestroProductosViewModel/ContenedorCRUDProductosViewModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorMestroProductosViewModel/theProductosViewModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorMestroProductosViewModel/theProductoViewModelSeleccionado"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorMestroProductosViewModel/ContenedorDetalleCompraViewModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorMestroProductosViewModel/ContenedorDetallePedidoViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorMestroProductosViewModel/crear"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudproductos/ContenedorMestroProductosViewModel/implementarModelo"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudproductos/ProductosViewModel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudproductos/ProductosViewModel/codigo"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudproductos/ProductosViewModel/precio"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudproductos/ProductosViewModel/categoria"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudproductos/ProductosViewModel/nombre"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudproductos/ProductosViewModel/ownedBy"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Contenedorcrudclientes" disposableProviderFactory="true"
+          ecorePackage="tiendaCristal.ecore#//ui/contenedorcrudclientes">
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorCRUDClienteViewModel">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorCRUDClienteViewModel/UI"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorCRUDClienteViewModel/theContenedorMaestroClienteViewModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorCRUDClienteViewModel/theContenedorDetalleClienteViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorCRUDClienteViewModel/crear"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorCRUDClienteViewModel/implementarModelo"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorCRUDClienteViewModel/enlazar"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorCRUDClienteViewModel/update"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorDetalleClienteViewModel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorDetalleClienteViewModel/nombre"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorDetalleClienteViewModel/codigo"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorDetalleClienteViewModel/tipoCliente"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorDetalleClienteViewModel/ContenedorCRUDClienteViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorDetalleClienteViewModel/implementarModelo"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorDetalleClienteViewModel/crear"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorMaestroClienteViewModel">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorMaestroClienteViewModel/ownedBy"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorMaestroClienteViewModel/theClienteViewModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorMaestroClienteViewModel/theClienteViewModelSeleccionada"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorMaestroClienteViewModel/ContenedorDetalleCompraViewModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorMaestroClienteViewModel/ContenedorDetallePedidoViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorMaestroClienteViewModel/implementarModelo"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorMaestroClienteViewModel/crear"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudclientes/ContenedorMaestroClienteViewModel/update"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudclientes/ClienteViewModel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudclientes/ClienteViewModel/nombre"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudclientes/ClienteViewModel/codigo"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudclientes/ClienteViewModel/tipoCliente"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudclientes/ClienteViewModel/ownedBy"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Contenedorcrudrealizarcompra" disposableProviderFactory="true"
+          ecorePackage="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra">
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorCRUDCompraViewModel">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorCRUDCompraViewModel/UI"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorCRUDCompraViewModel/theContenedorDetalleCompraViewModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorCRUDCompraViewModel/theContenedorMaestroCompraViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorCRUDCompraViewModel/implementarModelo"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorCRUDCompraViewModel/crearCompra"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorCRUDCompraViewModel/crear"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorCRUDCompraViewModel/implementar"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorCRUDCompraViewModel/enlazar"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/codigo"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/idCliente"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/codigoP"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/fecha"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/total"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/ContenedorCRUDCompraViewModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/theContenedorMaestroClienteViewModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/theContenedorMestroProductosViewModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/theContenedorMaestroPedidoViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/crear"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/create"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorDetalleCompraViewModel/implementarModelo"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorMaestroCompraViewModel">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorMaestroCompraViewModel/ContenedorCRUDCompraViewModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorMaestroCompraViewModel/listaCompraViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorMaestroCompraViewModel/create"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/ContenedorMaestroCompraViewModel/implementarModelo"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/CompraViewModel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/CompraViewModel/codigo"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/CompraViewModel/idCliente"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/CompraViewModel/codigoP"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/CompraViewModel/fecha"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/CompraViewModel/total"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudrealizarcompra/CompraViewModel/ContenedorMaestroCompraViewModel"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Contenedorcrudpedido" disposableProviderFactory="true"
+          ecorePackage="tiendaCristal.ecore#//ui/contenedorcrudpedido">
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorCRUDPedidoViewModel">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorCRUDPedidoViewModel/UI"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorCRUDPedidoViewModel/theContenedorDetallePedidoViewModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorCRUDPedidoViewModel/theContenedorMaestroPedidoViewModel"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorCRUDPedidoViewModel/implementarModelo"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorCRUDPedidoViewModel/crearPedido"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorCRUDPedidoViewModel/crear"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorDetallePedidoViewModel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorDetallePedidoViewModel/idCliente"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorDetallePedidoViewModel/codigo"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorDetallePedidoViewModel/fechaPedido"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorDetallePedidoViewModel/ContenedorCRUDPedidoViewModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorDetallePedidoViewModel/theContenedorMaestroClienteViewModel"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorDetallePedidoViewModel/theContenedorMestroProductosViewModel"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorMaestroPedidoViewModel">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorMaestroPedidoViewModel/ContenedorDetalleCompraViewModel"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorMaestroPedidoViewModel/ContenedorCRUDPedidoViewModel"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ContenedorMaestroPedidoViewModel/listaProductoComprarViewModel"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorcrudpedido/ProductoComprarViewModel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudpedido/ProductoComprarViewModel/codigo"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudpedido/ProductoComprarViewModel/nombre"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudpedido/ProductoComprarViewModel/precio"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//ui/contenedorcrudpedido/ProductoComprarViewModel/categoria"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorcrudpedido/ProductoComprarViewModel/ContenedorMaestroPedidoViewModel"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Contenedorpedidoviewpart" disposableProviderFactory="true"
+          ecorePackage="tiendaCristal.ecore#//ui/contenedorpedidoviewpart">
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorpedidoviewpart/ContenedorPedidoViewPart">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference tiendaCristal.ecore#//ui/contenedorpedidoviewpart/ContenedorPedidoViewPart/UI"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorpedidoviewpart/ContenedorPedidoViewPart/implementarModelo"/>
+          <genOperations ecoreOperation="tiendaCristal.ecore#//ui/contenedorpedidoviewpart/ContenedorPedidoViewPart/crear"/>
+        </genClasses>
+        <genClasses ecoreClass="tiendaCristal.ecore#//ui/contenedorpedidoviewpart/PedidoViewModel"/>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Domain" disposableProviderFactory="true" ecorePackage="tiendaCristal.ecore#//domain">
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/Pedido">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Pedido/idCliente"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Pedido/codigo"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Pedido/fechaPedido"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Pedido/Domain"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Pedido/theCompra"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Pedido/theCliente"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Pedido/listaProductos"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Pedido/theVendedor"/>
+      </genClasses>
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/Compra">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Compra/codigo"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Compra/idCliente"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Compra/codigoP"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Compra/fecha"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Compra/total"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Compra/Domain"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Compra/theReciboPago"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Compra/thePedido"/>
+      </genClasses>
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/Cliente">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Cliente/nombre"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Cliente/codigo"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Cliente/tipoCliente"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Cliente/Domain"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Cliente/listaPedidos"/>
+      </genClasses>
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/Administrador">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Administrador/Domain"/>
+      </genClasses>
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/Producto">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Producto/codigo"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Producto/precio"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Producto/categoria"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Producto/nombre"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Producto/Domain"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Producto/thePedido"/>
+      </genClasses>
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/ReciboPago">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/ReciboPago/codigoFactura"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/ReciboPago/costoTotalPedido"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/ReciboPago/Domain"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/ReciboPago/theCompra"/>
+      </genClasses>
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/Domain">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/theUIAsociado"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/ownedByModelFactory"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/listaPedidos"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/listaCompras"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/theAdministrador"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/listaClientes"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/listaProductos"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/listaFacturas"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/theTiendaCristal"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/theVendedor"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Domain/theInventario"/>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/implementarModelo"/>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/crearProducto">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/crearProducto/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/crearCompra">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/crearCompra/formuario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/crearPedido">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/crearPedido/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/buscarProductoId">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/buscarProductoId/id"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/agregarListaP">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/agregarListaP/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/buscarProductoNombre">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/buscarProductoNombre/nombre"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/crearCliente">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/crearCliente/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/actualizarCliente">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/actualizarCliente/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/eliminarCliente">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/eliminarCliente/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/buscarCliente">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/buscarCliente/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/buscarClienteId">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/buscarClienteId/id"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/buscarProducto">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/buscarProducto/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/eliminarProducto">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/eliminarProducto/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/actualizarProducto">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/actualizarProducto/formulario"/>
+        </genOperations>
+        <genOperations ecoreOperation="tiendaCristal.ecore#//domain/Domain/updateContenedorListadoClientes">
+          <genParameters ecoreParameter="tiendaCristal.ecore#//domain/Domain/updateContenedorListadoClientes/formulario"/>
+        </genOperations>
+      </genClasses>
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/DistribuidoraCristal">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/DistribuidoraCristal/nombre"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/DistribuidoraCristal/codigo"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/DistribuidoraCristal/Domain"/>
+      </genClasses>
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/Vendedor">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tiendaCristal.ecore#//domain/Vendedor/nombre"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Vendedor/Domain"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Vendedor/listaPedidos"/>
+      </genClasses>
+      <genClasses ecoreClass="tiendaCristal.ecore#//domain/Inventario">
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference tiendaCristal.ecore#//domain/Inventario/Domain"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

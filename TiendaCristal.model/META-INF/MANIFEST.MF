@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model
+Bundle-SymbolicName: TiendaCristal.model
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: TiendaCristal.model
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.ui;bundle-version="3.109.0",
+ org.eclipse.core.runtime;bundle-version="3.13.0",
+ TiendaCristal;bundle-version="1.0.0"
+Export-Package: tiendaCristal.model
